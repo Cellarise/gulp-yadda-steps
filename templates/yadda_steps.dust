@@ -1,0 +1,5 @@
+{#scenarios}/*Scenario: {title|s} */{#steps}
+        .define("{.|s}", function(done) {
+            this.assert(false);
+            done();
+        }){/steps}{/scenarios}

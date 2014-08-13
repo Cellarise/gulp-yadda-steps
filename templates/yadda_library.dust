@@ -1,0 +1,9 @@
+/* jslint node: true */
+"use strict";
+var English = require('yadda').localisation.English;
+{#feature}
+/* Feature: {title|s} */
+module.exports = (function() {
+    return English.library()
+    {>steps/};
+})();{/feature}
