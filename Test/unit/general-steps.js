@@ -9,7 +9,6 @@ var Render = require('../../lib').Render;
 
 module.exports = (function() {
     return English.library()
-
         /*Scenario: Generating test steps*/
         .define("Given I have a $Name (?:feature|json) (?:file|output)", function(filename, done) {
             this.world.feature = filename;

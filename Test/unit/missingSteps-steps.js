@@ -13,7 +13,10 @@ module.exports = (function() {
             var self = this;
             this.world.streamResult = [];
             gulp.src(path.join(__dirname, '../testFeatures/' + this.world.feature) + '.feature')
-                .pipe(new Both())
+                .pipe(new Both({
+                    libraryBasePath: path.join(__dirname, '../testStepLibrary'),
+                    featureBasePath: path.join(__dirname, '../testFeatures')
+                }))
                 .on('data', function(vinyl) {
                     self.world.streamResult.push(vinyl.contents);
                 })
