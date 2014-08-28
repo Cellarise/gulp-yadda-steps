@@ -2,33 +2,55 @@
   "author": "John Barry",
   "name": "gulp-yadda-steps",
   "description": "A gulp task to generate or update Yadda test step libraries from Gherkin features (natural language test scripts).",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "repository": {
     "type": "git",
     "url": "https://github.com/Cellarise/gulp-yadda-steps.git"
   },
   "config": {
-    "build": "25",
-    "buildTimestamp": "2014-08-17T23:32:23.657+10:00",
-    "adminEmail": "admin@cellarise.com"
+    "adminEmail": "admin@cellarise.com",
+    "build": "27",
+    "buildTimestamp": "2014-08-28T22:37:04.792+10:00"
   },
   "main": "./lib",
   "dependencies": {
     "gulp-util": "^3.0.0",
-    "yadda": "^0.10.14",
+    "yadda": "^0.11.2",
     "dustjs-linkedin": "^2.3.4",
     "dustjs-helpers": "^1.2.0",
     "through2": "^0.5.1",
     "streamifier": "^0.1.0"
   },
-  "optionalDependencies": {},
   "devDependencies": {
+    "handlebars": "2.0.0-alpha.4",
     "gulp": "^3.8.6",
-    "gulp-mocha": "^0.5.2",
-    "gulp-load": "^0.1.1",
+    "gulp-mocha": "^1.0.0",
+    "gulp-load-params": "^0.1.3",
+    "run-sequence": "^0.3.6",
     "gulp-jsdoc-to-markdown": "^0.1.3",
     "gulp-concat": "^2.3.4",
-    "gulp-dust-compile-render": "^0.1.4",
-    "gulp-rename": "^1.2.0"
-  }
+    "gulp-dust-compile-render": "^0.1.8",
+    "gulp-rename": "^1.2.0",
+    "yadda": "^0.11.2",
+    "npm-license": "^0.2.2",
+    "should": "^4.0.4",
+    "webpack": "^1.3.7"
+  },
+  "directories": {
+    "lib": "lib",
+    "bin": "bin",
+    "doc": "doc",
+    "tasks": "tasks",
+    "templates": "templates",
+    "test": "Test",
+    "testFeatures": "Test/unit/",
+    "testSteps": "Test/unit/",
+    "reports": "Reports",
+    "build": "Build"
+  },
+  "license": "MIT License (MIT)",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "optionalDependencies": {}
 }

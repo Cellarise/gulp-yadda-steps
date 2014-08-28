@@ -2,9 +2,10 @@
 "use strict";
 var gulp = require("gulp");
 var Both = require('../../lib');
-var fs = require('fs'),
-    path = require('path'),
-    English = require('yadda').localisation.English;
+var fs = require('fs');
+var path = require('path');
+var English = require('yadda').localisation.English;
+var assert = require('assert');
 
 module.exports = (function() {
     return English.library()
@@ -26,11 +27,11 @@ module.exports = (function() {
         })
         /*Scenario: Generating test steps*/
         .define("And the test step library for the $name feature already exists", function(filename, done) {
-            this.assert(fs.existsSync(path.join(__dirname, '../testStepLibrary/' + filename) + '-steps.js'));
+            assert(fs.existsSync(path.join(__dirname, '../testStepLibrary/' + filename) + '-steps.js'));
             done();
         })
         .define("Then missing steps are added to the existing test step library", function(done) {
-            this.assert.equal(this.world.streamResult.join(''),
+            assert.equal(this.world.streamResult.join(''),
                 fs.readFileSync(
                         path.join(__dirname, '../testStepLibrary/' +
                             this.world.feature) +

@@ -4,6 +4,7 @@ var fs = require('fs');
 var gulp = require("gulp");
 var path = require('path');
 var English = require('yadda').localisation.English;
+var assert = require('assert');
 var Parser = require('../../lib').Parser;
 var Render = require('../../lib').Render;
 
@@ -15,7 +16,7 @@ module.exports = (function() {
             done();
         })
         .given("the test steps file doesn't already exist", function(done) {
-            this.assert(!fs.existsSync(path.join(__dirname, '../testStepLibrary/' + this.world.feature) + '-steps.js'));
+            assert(!fs.existsSync(path.join(__dirname, '../testStepLibrary/' + this.world.feature) + '-steps.js'));
             done();
         })
         .when("I parse the feature file", function(done) {
@@ -46,14 +47,14 @@ module.exports = (function() {
                 });
         })
         .define("Then a yadda json output is generated", function(done) {
-            this.assert.equal(this.world.streamResult.join(''),
+            assert.equal(this.world.streamResult.join(''),
                 fs.readFileSync(
                         path.join(__dirname, '../testStepLibrary/' +
                             this.world.feature) + '-steps.json', "UTF-8"));
             done();
         })
         .define("Then a test steps script is generated", function(done) {
-            this.assert.equal(this.world.streamResult.join(''),
+            assert.equal(this.world.streamResult.join(''),
                 fs.readFileSync(
                         path.join(__dirname, '../testStepLibrary/' +
                             this.world.feature) + '-steps.expected.js', "UTF-8"));
