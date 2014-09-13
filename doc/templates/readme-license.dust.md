@@ -1,6 +1,6 @@
 # License
 
-{license}
+{license}. All rights not explicitly granted in the license are reserved.
 
 Copyright (c) 2014 {author}
 

@@ -2,15 +2,46 @@
   "author": "John Barry",
   "name": "gulp-yadda-steps",
   "description": "A gulp task to generate or update Yadda test step libraries from Gherkin features (natural language test scripts).",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/Cellarise/gulp-yadda-steps.git"
   },
   "config": {
     "adminEmail": "admin@cellarise.com",
-    "build": "27",
-    "buildTimestamp": "2014-08-28T22:37:04.792+10:00"
+    "coverage": {
+      "stats": {
+        "lines": {
+          "pctSkipped": 0,
+          "pct": 91,
+          "colour": "green"
+        },
+        "branches": {
+          "pctSkipped": 0,
+          "pct": 74,
+          "colour": "yellow"
+        },
+        "statements": {
+          "pctSkipped": 0,
+          "pct": 91,
+          "colour": "green"
+        },
+        "functions": {
+          "pctSkipped": 0,
+          "pct": 100,
+          "colour": "brightgreen"
+        },
+        "skipped": {
+          "pct": 0
+        },
+        "overall": {
+          "pct": 89,
+          "colour": "green"
+        }
+      }
+    },
+    "build": "30",
+    "buildTimestamp": "2014-09-13T10:39:34.407+10:00"
   },
   "main": "./lib",
   "dependencies": {
@@ -34,7 +65,21 @@
     "yadda": "^0.11.2",
     "npm-license": "^0.2.2",
     "should": "^4.0.4",
-    "webpack": "^1.3.7"
+    "webpack": "^1.3.7",
+    "oauth-rest-atlassian": "^0.3.0",
+    "jira": "^0.10.0",
+    "through2": "^0.6.1",
+    "gulp-yadda-steps": "^0.1.1",
+    "mkdirp": "^0.5.0",
+    "underscore": "^1.6.0",
+    "glob": "^4.0.5",
+    "gulp-istanbul-custom-reports": "^0.1.0",
+    "istanbul-reporter-clover-limits": "^0.1.1",
+    "gulp-jshint": "^1.8.4",
+    "jshint-reporter-bamboo": "^0.1.0",
+    "mocha-bamboo-reporter-bgo": "^1.0.7",
+    "gulp-json-editor": "^2.0.2",
+    "gulp-async-func-runner": "^0.1.2"
   },
   "directories": {
     "lib": "lib",
@@ -43,8 +88,8 @@
     "tasks": "tasks",
     "templates": "templates",
     "test": "Test",
-    "testFeatures": "Test/unit/",
-    "testSteps": "Test/unit/",
+    "testFeatures": "Test\\functional",
+    "testSteps": "Test\\functional",
     "reports": "Reports",
     "build": "Build"
   },

@@ -1,5 +1,5 @@
-@libraries=general-steps.js
-Feature: Automate adding missing test steps from a test feature script
+@libraries=Package-MDGSTEP-2-steps.js
+Feature: Package: Automate adding missing test steps from a test feature script.
   As a developer
   I can automatically add missing steps to my step library based on my test feature
   So that I can make frequent changes to my test feature and keep my step library up to date with minimal time and effort

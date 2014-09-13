@@ -5,8 +5,8 @@ var gulp = require("gulp");
 var path = require('path');
 var English = require('yadda').localisation.English;
 var assert = require('assert');
-var Parser = require('../../lib').Parser;
-var Render = require('../../lib').Render;
+var Parser = require('../../lib/index').Parser;
+var Render = require('../../lib/index').Render;
 
 module.exports = (function() {
     return English.library()

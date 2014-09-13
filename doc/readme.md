@@ -1,7 +1,9 @@
 # gulp-yadda-steps
-[![view on npm](http://img.shields.io/npm/v/gulp-yadda-steps.svg)](https://www.npmjs.org/package/gulp-yadda-steps)
-[![npm module downloads per month](http://img.shields.io/npm/dm/gulp-yadda-steps.svg)](https://www.npmjs.org/package/gulp-yadda-steps)
-[![Dependency Status](https://david-dm.org/Cellarise/gulp-yadda-steps.svg)](https://david-dm.org/Cellarise/gulp-yadda-steps)
+[![view on npm](http://img.shields.io/npm/v/gulp-yadda-steps.svg?style=flat)](https://www.npmjs.org/package/gulp-yadda-steps)
+[![npm module downloads per month](http://img.shields.io/npm/dm/gulp-yadda-steps.svg?style=flat)](https://www.npmjs.org/package/gulp-yadda-steps)
+[![Dependency status](https://david-dm.org/Cellarise/gulp-yadda-steps.svg?style=flat)](https://david-dm.org/Cellarise/gulp-yadda-steps)
+[![Coverage](https://img.shields.io/badge/coverage-89%25_skipped:0%25-green.svg?style=flat)](https://www.npmjs.org/package/gulp-yadda-steps)
+[![Open issues](https://img.shields.io/github/issues/Cellarise/gulp-yadda-steps.svg?style=flat)](https://github.com/Cellarise/gulp-yadda-steps/issues)
 
 > A gulp task to generate or update Yadda test step libraries from Gherkin features (natural language test scripts).
 
@@ -27,9 +29,90 @@ gulp.src('local.feature')
 *documented by [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown)*.
 
 
+#Changelog
+
+<table style="width:100%;border-spacing:0px;border-collapse:collapse;margin:0px;padding:0px;border-width:0px;">
+   <tr>
+    <th style="width:20px;text-align:center;"></th>
+    <th style="width:80px;text-align:center;">Type</th> 
+    <th style="width:80px;text-align:left;">ID</th>
+    <th style="text-align:left;">Summary</th>
+   </tr>
+
+  <tr>
+    <td colspan=4><strong>Version: 0.1.5 - released 2014-09-13</strong></td>
+   </tr>
+
+  <tr>
+    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td> 
+    <td style="width:80px;text-align:center;">Feature</td> 
+    <td style="width:80px;text-align:left;">MDGSTEP-8</td>
+    <td>Template: Update step library to require assert package.</td>
+   </tr>
+
+
+  <tr>
+    <td colspan=4><strong>Version: 0.1.4 - released 2014-08-28</strong></td>
+   </tr>
+
+  <tr>
+    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td> 
+    <td style="width:80px;text-align:center;">Non-functional</td> 
+    <td style="width:80px;text-align:left;">MDGSTEP-6</td>
+    <td>Package: Migrate to new Cellarise Package Manager.</td>
+   </tr>
+
+
+  <tr>
+    <td colspan=4><strong>Version: 0.1.3 - released 2014-08-17</strong></td>
+   </tr>
+
+  <tr>
+    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype'/></td> 
+    <td style="width:80px;text-align:center;">Bug</td> 
+    <td style="width:80px;text-align:left;">MDGSTEP-5</td>
+    <td>Render: Fix duplicate steps generated in output.</td>
+   </tr>
+
+
+  <tr>
+    <td colspan=4><strong>Version: 0.1.2 - released 2014-08-14</strong></td>
+   </tr>
+
+  <tr>
+    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype'/></td> 
+    <td style="width:80px;text-align:center;">Bug</td> 
+    <td style="width:80px;text-align:left;">MDGSTEP-4</td>
+    <td>Package: Fix path to main library in package.json.</td>
+   </tr>
+
+
+  <tr>
+    <td colspan=4><strong>Version: 0.1.0 - released 2014-08-13</strong></td>
+   </tr>
+
+  <tr>
+    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td> 
+    <td style="width:80px;text-align:center;">Feature</td> 
+    <td style="width:80px;text-align:left;">MDGSTEP-3</td>
+    <td>Package: Automate adding missing test steps from a test feature script.</td>
+   </tr>
+
+  <tr>
+    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td> 
+    <td style="width:80px;text-align:center;">Feature</td> 
+    <td style="width:80px;text-align:left;">MDGSTEP-2</td>
+    <td>Package: Generate test steps from gherkin features.</td>
+   </tr>
+
+
+</table>
+
+
+
 # License
 
-MIT License (MIT)
+MIT License (MIT). All rights not explicitly granted in the license are reserved.
 
 Copyright (c) 2014 John Barry
 

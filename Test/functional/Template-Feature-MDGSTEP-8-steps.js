@@ -1,10 +1,9 @@
 /* jslint node: true */
 "use strict";
 var English = require('yadda').localisation.English;
-var assert = require('assert');
-{#feature}
-/* Feature: {title|s} */
+
+/* Feature: Template: Update step library to require assert package. */
 module.exports = (function() {
     return English.library()
-    {>steps/};
-})();{/feature}
+    /*Scenario: require assert package */;
+})();

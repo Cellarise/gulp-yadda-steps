@@ -1,9 +1,10 @@
 /* jslint node: true */
 "use strict";
 var gulp = require("gulp");
-var Both = require('../../lib');
+var Both = require('../../lib/index');
 var path = require('path');
 var English = require('yadda').localisation.English;
+var assert = require('assert');
 
 module.exports = (function() {
     return English.library()
@@ -19,7 +20,8 @@ module.exports = (function() {
                 .on('data', function(vinyl) {
                     self.world.streamResult.push(vinyl.contents);
                 })
-                .on('end', function() {
+                .on('end', function(){
+                    assert(true);
                     done();
                 });
         });

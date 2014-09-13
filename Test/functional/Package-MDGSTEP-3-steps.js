@@ -1,7 +1,7 @@
 /* jslint node: true */
 "use strict";
 var gulp = require("gulp");
-var Both = require('../../lib');
+var Both = require('../../lib/index');
 var fs = require('fs');
 var path = require('path');
 var English = require('yadda').localisation.English;

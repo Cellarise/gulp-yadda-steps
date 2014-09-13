@@ -39,9 +39,6 @@ module.exports = function (gulp, context) {
                                     license: JSON.stringify(dependencies[dep].licenses),
                                     repository: JSON.stringify(dependencies[dep].repository)
                                 };
-                                //if (dependencies[dep] instanceof Array){
-                                //    result.repository
-                                //}
                                 pkg.licenses.push(result);
                             }
                         }

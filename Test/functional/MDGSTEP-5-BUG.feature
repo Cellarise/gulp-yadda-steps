@@ -1,7 +1,6 @@
-@libraries=general-steps.js
-Feature: Duplicate steps generated
+@libraries=Package-MDGSTEP-2-steps.js
+Feature: Render: Fix duplicate steps generated in output.
   Duplicate steps being generated when I rerun the task
-
 
   Scenario: Recreate duplicate step generation
 

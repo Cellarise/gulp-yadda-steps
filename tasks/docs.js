@@ -11,7 +11,7 @@ var GulpDustCompileRender = require('gulp-dust-compile-render');
  * @alias tasks:docs
  */
 module.exports = function(gulp, context) {
-    gulp.task("docs", function(){
+    gulp.task("docs", ['docs-pre'], function(){
         var cwd = context.cwd;
         var pkg = context.package;
         var directories = pkg.directories;
