@@ -1,19 +1,17 @@
-/* jslint node: true */
-"use strict";
-var mocha = require('gulp-mocha');
-var mkdirp = require('mkdirp');
-var istanbul = require('gulp-istanbul-custom-reports');
-istanbul.registerReport(require('istanbul-reporter-clover-limits'));
-var gutil = require('gulp-util');
-var glob = require('glob');
-var path = require('path');
-var _ = require('underscore');
-
 /**
  * A set of gulp build tasks to run test steps.
  * @alias tasks:test-tasks
  */
 module.exports = function (gulp, context) {
+    "use strict";
+    var mocha = require('gulp-mocha');
+    var mkdirp = require('mkdirp');
+    var istanbul = require('gulp-istanbul-custom-reports');
+    istanbul.registerReport(require('istanbul-reporter-clover-limits'));
+    var gutil = require('gulp-util');
+    var glob = require('glob');
+    var path = require('path');
+    var _ = require('underscore');
 
     function handleError(err) {
         gutil.log(err.toString());
@@ -38,10 +36,16 @@ module.exports = function (gulp, context) {
             }
         });
 
+        //set YADDA_FEATURE_GLOB if argv[2]
+        if(context.argv.length === 2){
+            process.env.YADDA_FEATURE_GLOB = context.argv[1];
+            console.log('Set process.env.YADDA_FEATURE_GLOB=' + process.env.YADDA_FEATURE_GLOB);
+        }
+
         return gulp.src(directories.test + '/test.js')
             .pipe(mocha({
                 reporter: reporter,
-                timeout: 5000
+                timeout: 500000
             }))
             .on("error", handleError)
             .pipe(istanbul.writeReports({
@@ -80,9 +84,10 @@ module.exports = function (gulp, context) {
         var cwd = context.cwd;
         var pkg = context.package;
         var directories = pkg.directories;
+        var path = require('path');
 
-        process.env.MOCHA_FILE = cwd + '/' + directories.reports + '/unit-mocha-tests.json'; //results file path for mocha-bamboo-reporter-bgo
-        mkdirp.sync(cwd + '/' + directories.reports); //make sure the Reports directory exists - required for mocha-bamboo-reporter-bgo
+        process.env.MOCHA_FILE = path.join(cwd, directories.reports, 'unit-mocha-tests.json'); //results file path for mocha-bamboo-reporter-bgo
+        mkdirp.sync(path.join(cwd, directories.reports)); //make sure the Reports directory exists - required for mocha-bamboo-reporter-bgo
         return test('mocha-bamboo-reporter-bgo');
     });
 

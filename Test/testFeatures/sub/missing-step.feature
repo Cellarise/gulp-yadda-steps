@@ -1,4 +1,4 @@
-@libraries=../../testStepLibrary/other-steps.js
+@libraries=../other-steps.js
 Feature: Generate test steps from gherkin features
   As a developer
   I want to be able to generate test step boilerplate code from gherkin features

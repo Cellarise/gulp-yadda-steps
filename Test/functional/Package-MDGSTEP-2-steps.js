@@ -1,14 +1,14 @@
-/* jslint node: true */
-"use strict";
-var fs = require('fs');
-var gulp = require("gulp");
-var path = require('path');
-var English = require('yadda').localisation.English;
-var assert = require('assert');
-var Parser = require('../../lib/index').Parser;
-var Render = require('../../lib/index').Render;
 
 module.exports = (function() {
+    "use strict";
+    var fs = require('fs');
+    var gulp = require("gulp");
+    var path = require('path');
+    var English = require('yadda').localisation.English;
+    var assert = require('assert');
+    var Parser = require('../../lib/index').Parser;
+    var Render = require('../../lib/index').Render;
+
     return English.library()
         /*Scenario: Generating test steps*/
         .define("Given I have a $Name (?:feature|json) (?:file|output)", function(filename, done) {

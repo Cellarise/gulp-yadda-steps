@@ -1,8 +1,3 @@
-/* jslint node: true */
-"use strict";
-var jeditor = require('gulp-json-editor');
-var fs = require('fs');
-
 /**
  * A gulp build task to calculate coverage stats from the Istanbul reporter json-summary.
  * Coverage stats are appended to package.json config.coverage.stats property.
@@ -10,6 +5,10 @@ var fs = require('fs');
  * @alias tasks:coverage-stats
  */
 module.exports = function(gulp) {
+    "use strict";
+    var jeditor = require('gulp-json-editor');
+    var fs = require('fs');
+
     gulp.task('coverage-stats', function() {
 
         function calculateCoverageStats(json){
@@ -85,20 +84,21 @@ module.exports = function(gulp) {
                     }
                 }
                 //set skipped percentages
-                coverageStats.lines.pctSkipped = Math.round((coverageStats.lines.skipped / coverageStats.lines.total) * 100);
-                coverageStats.branches.pctSkipped = Math.round((coverageStats.branches.skipped / coverageStats.branches.total) * 100);
-                coverageStats.statements.pctSkipped = Math.round((coverageStats.statements.skipped / coverageStats.statements.total) * 100);
-                coverageStats.functions.pctSkipped = Math.round((coverageStats.functions.skipped / coverageStats.functions.total) * 100);
+                coverageStats.lines.pctSkipped = Math.round((coverageStats.lines.skipped / coverageStats.lines.total) * 100) || 0;
+                coverageStats.branches.pctSkipped = Math.round((coverageStats.branches.skipped / coverageStats.branches.total) * 100) || 0;
+                coverageStats.statements.pctSkipped = Math.round((coverageStats.statements.skipped / coverageStats.statements.total) * 100) || 0;
+                coverageStats.functions.pctSkipped = Math.round((coverageStats.functions.skipped / coverageStats.functions.total) * 100) || 0;
+
                 coverageStats.skipped.pct = Math.round(((coverageStats.lines.pctSkipped +
                     coverageStats.branches.pctSkipped +
                     coverageStats.statements.pctSkipped +
                     coverageStats.functions.pctSkipped )/ 400) * 100);
 
                 //set overall percentages
-                coverageStats.lines.pct = Math.round((coverageStats.lines.covered / coverageStats.lines.total) * 100);
-                coverageStats.branches.pct = Math.round((coverageStats.branches.covered / coverageStats.branches.total) * 100);
-                coverageStats.statements.pct = Math.round((coverageStats.statements.covered / coverageStats.statements.total) * 100);
-                coverageStats.functions.pct = Math.round((coverageStats.functions.covered / coverageStats.functions.total) * 100);
+                coverageStats.lines.pct = Math.round((coverageStats.lines.covered / coverageStats.lines.total) * 100) || 0;
+                coverageStats.branches.pct = Math.round((coverageStats.branches.covered / coverageStats.branches.total) * 100) || 0;
+                coverageStats.statements.pct = Math.round((coverageStats.statements.covered / coverageStats.statements.total) * 100) || 0;
+                coverageStats.functions.pct = Math.round((coverageStats.functions.covered / coverageStats.functions.total) * 100) || 0;
                 coverageStats.overall.pct = Math.round(((coverageStats.lines.pct +
                     coverageStats.branches.pct +
                     coverageStats.statements.pct +

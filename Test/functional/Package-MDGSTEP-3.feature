@@ -4,7 +4,6 @@ Feature: Package: Automate adding missing test steps from a test feature script.
   I can automatically add missing steps to my step library based on my test feature
   So that I can make frequent changes to my test feature and keep my step library up to date with minimal time and effort
 
-
   Scenario: Add missing steps
 
     Given I have a sub/missing-step feature file

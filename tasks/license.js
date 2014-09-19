@@ -1,14 +1,13 @@
-/* jslint node: true */
-"use strict";
-var checker = require('npm-license');
-var GulpDustCompileRender = require('gulp-dust-compile-render');
-var rename = require("gulp-rename");
-
 /**
  * A gulp build task to generate license documentation from all dependent packages.
  * @alias tasks:license
  */
 module.exports = function (gulp, context) {
+    "use strict";
+    var checker = require('npm-license');
+    var GulpDustCompileRender = require('gulp-dust-compile-render');
+    var rename = require("gulp-rename");
+
     gulp.task('license', function () {
         var pkg = context.package;
         var directories = pkg.directories;

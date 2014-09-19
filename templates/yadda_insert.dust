@@ -1,2 +1,2 @@
-{#feature}{?scenarios}{?steps}{>steps/}
-        {/steps}{/scenarios}{/feature}
+{#feature}{?scenarios}{>steps/}
+        {/scenarios}{/feature}

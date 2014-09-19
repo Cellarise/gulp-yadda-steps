@@ -6,11 +6,11 @@ Feature: Develop clover-style json report with source-map support
   Scenario: Code coverage report with no source maps
 
     Given I have a non-bundled Javascript file
-    When I run coverage report on the files
+    When I run the coverage report on the files
     Then a report is produced referencing the non-bundled files
 
   Scenario: Code coverage report with source maps
 
     Given I have a bundled Javascript file
-    When I run coverage report on the file
+    When I execute the coverage report on the file
     Then a report is produced referencing the non-bundled files

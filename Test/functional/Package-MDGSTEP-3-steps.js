@@ -1,15 +1,19 @@
-/* jslint node: true */
-"use strict";
-var gulp = require("gulp");
-var Both = require('../../lib/index');
-var fs = require('fs');
-var path = require('path');
-var English = require('yadda').localisation.English;
-var assert = require('assert');
 
 module.exports = (function() {
+    "use strict";
+    var gulp = require("gulp");
+    var Both = require('../../lib/index');
+    var fs = require('fs');
+    var path = require('path');
+    var English = require('yadda').localisation.English;
+    var assert = require('assert');
+
     return English.library()
-    /*Scenario: Add missing steps */
+        /*Scenario: Generating test steps*/
+        .define("And the test step library for the $name feature already exists", function(filename, done) {
+            assert(fs.existsSync(path.join(__dirname, '../testStepLibrary/' + filename) + '-steps.js'));
+            done();
+        })
         .define("When I parse and render the feature file", function(done) {
             var self = this;
             this.world.streamResult = [];
@@ -24,11 +28,6 @@ module.exports = (function() {
                 .on('end', function() {
                     done();
                 });
-        })
-        /*Scenario: Generating test steps*/
-        .define("And the test step library for the $name feature already exists", function(filename, done) {
-            assert(fs.existsSync(path.join(__dirname, '../testStepLibrary/' + filename) + '-steps.js'));
-            done();
         })
         .define("Then missing steps are added to the existing test step library", function(done) {
             assert.equal(this.world.streamResult.join(''),
