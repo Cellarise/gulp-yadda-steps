@@ -1,4 +1,3 @@
-/* jslint node: true */
 
 /* Feature: Generate test steps from gherkin features */
 module.exports = (function() {

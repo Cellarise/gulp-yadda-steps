@@ -2,7 +2,7 @@
 [![view on npm](http://img.shields.io/npm/v/gulp-yadda-steps.svg?style=flat)](https://www.npmjs.org/package/gulp-yadda-steps)
 [![npm module downloads per month](http://img.shields.io/npm/dm/gulp-yadda-steps.svg?style=flat)](https://www.npmjs.org/package/gulp-yadda-steps)
 [![Dependency status](https://david-dm.org/Cellarise/gulp-yadda-steps.svg?style=flat)](https://david-dm.org/Cellarise/gulp-yadda-steps)
-[![Coverage](https://img.shields.io/badge/coverage-89%25_skipped:0%25-green.svg?style=flat)](https://www.npmjs.org/package/gulp-yadda-steps)
+[![Coverage](https://img.shields.io/badge/coverage-90%25_skipped:0%25-green.svg?style=flat)](https://www.npmjs.org/package/gulp-yadda-steps)
 [![Open issues](https://img.shields.io/github/issues/Cellarise/gulp-yadda-steps.svg?style=flat)](https://github.com/Cellarise/gulp-yadda-steps/issues)
 
 > A gulp task to generate or update Yadda test step libraries from Gherkin features (natural language test scripts).
@@ -229,6 +229,18 @@ return English.library()
     <th style="width:80px;text-align:left;">ID</th>
     <th style="text-align:left;">Summary</th>
    </tr>
+
+  <tr>
+    <td colspan=4><strong>Version: 0.1.7 - released 2014-09-22</strong></td>
+   </tr>
+
+  <tr>
+    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td> 
+    <td style="width:80px;text-align:center;">Non-functional</td> 
+    <td style="width:80px;text-align:left;">MDGSTEP-14</td>
+    <td>Parser: Add error logger to require step library function</td>
+   </tr>
+
 
   <tr>
     <td colspan=4><strong>Version: 0.1.6 - released 2014-09-20</strong></td>

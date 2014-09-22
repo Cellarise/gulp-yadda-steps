@@ -11,3 +11,10 @@ Feature: Generate test steps from gherkin features
     And the test step library missing-step
     When I parse the feature file with the missing option set
     Then missing steps snippets are streamed
+
+
+  Scenario: 2nd generation test steps
+
+    Given I have another missing-step feature file
+    When I parse the feature file with the missing option set
+    Then missing steps snippets are streamed

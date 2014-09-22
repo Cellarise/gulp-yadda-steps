@@ -8,6 +8,7 @@ module.exports = (function() {
     var assert = require('assert');
     var Parser = require('../../lib/index').Parser;
     var Render = require('../../lib/index').Render;
+    var Both = require('../../lib/index');
 
     return English.library()
         /*Scenario: Generating test steps*/
@@ -46,18 +47,34 @@ module.exports = (function() {
                     done();
                 });
         })
+        .when("I parse and render the feature file", function(done) {
+            var self = this;
+            this.world.streamResult = [];
+            gulp.src(path.join(__dirname, '../testFeatures/' + this.world.feature) + '.feature')
+                .pipe(new Both({
+                    libraryBasePath: path.join(process.cwd(), './Test/testStepLibrary'),
+                    featureBasePath: path.join(process.cwd(), './Test/testFeatures')
+                }))
+                .on('data', function(vinyl) {
+                    self.world.streamResult.push(vinyl.contents);
+                })
+                .on('end', function(){
+                    assert(true);
+                    done();
+                });
+        })
         .define("Then a yadda json output is generated", function(done) {
             assert.equal(this.world.streamResult.join(''),
                 fs.readFileSync(
-                        path.join(__dirname, '../testStepLibrary/' +
-                            this.world.feature) + '-steps.json', "UTF-8"));
+                        path.join(__dirname, '../testStepLibrary/') +
+                        this.world.feature + '-steps.json', "UTF-8"));
             done();
         })
         .define("Then a test steps script is generated", function(done) {
             assert.equal(this.world.streamResult.join(''),
                 fs.readFileSync(
-                        path.join(__dirname, '../testStepLibrary/' +
-                            this.world.feature) + '-steps.expected.js', "UTF-8"));
+                        path.join(__dirname, '../testStepLibrary/') +
+                        this.world.feature + '-steps.expected.js', "UTF-8"));
             done();
         });
 })();

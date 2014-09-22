@@ -1,4 +1,3 @@
-/* jslint node: true */
 
 /* Feature: Generate test steps from gherkin features */
 module.exports = (function() {
@@ -12,6 +11,10 @@ module.exports = (function() {
             done();
         })
         .define("Then missing steps snippets are streamed", function(done) {
+            assert(true);
+            done();
+        })/*Scenario: 2nd generation test steps */
+        .define("Given I have another missing-step feature file", function(done) {
             assert(true);
             done();
         })
