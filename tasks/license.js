@@ -1,5 +1,7 @@
 /**
  * A gulp build task to generate license documentation from all dependent packages.
+ * The license data is automatically sourced from node_package folder using `npm-license`.
+ * The result is saved to `doc/templates/readme-license.dust.md`.
  * @alias tasks:license
  */
 module.exports = function (gulp, context) {
