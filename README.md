@@ -32,7 +32,8 @@ A gulp task to generate or update Yadda test step libraries from Gherkin feature
 
 - opts `Object` - Task configuration options (see modules Parser and Render for more information)  
 
-**Returns**: `readable-stream/transform`  
+**Type**: `name`  
+**Returns**: `through2` - readable-stream/transform  
 **Example**  
  Given the feature file:
 
@@ -86,84 +87,23 @@ module.exports = (function() {
 Note that the output is a vinyl file which will have the filePath overridden if the libraryBasePath and featureBasePath options are set.
 
 
-**Members**
-
-* [gulp-yadda-steps](#module_gulp-yadda-steps)
-  * [gulp-yadda-steps.Parser(opts)](#module_gulp-yadda-steps.Parser)
-  * [gulp-yadda-steps.Render(opts)](#module_gulp-yadda-steps.Render)
-
-<a name="module_gulp-yadda-steps.Parser"></a>
-##gulp-yadda-steps.Parser(opts)
-Parser is a transform stream requiring a valid feature file.  Parser will load test step libraries tagged in the
-feature (using @libraries=) and will attempt to load a file with the feature filename and suffix '-steps.js'.
-If one or more libraries are found they will be used to find step matches in the feature and filter them from the output.
-
-**Params**
-
-- opts `Object` - Parser configuration options  
-  - \[libraryBasePath\] `string` - Specifies a path to the base location for the test step libraries.
-E.g. if the base path to the test step library is `Test/unit/steps/` use `path.join(__dirname, './steps/')`
-if the script is running from `'Test/unit'`.
-Note: featureBasePath must also be set for this option to take effect.  
-  - \[featureBasePath\] `string` - Specifies a path to the base location for the features.
-Note: libraryBasePath must also be set for this option to take effect.  
-
-**Returns**: `readable-stream/transform`  
-**Example**  
-Given the feature file:
-
-```markdown
-Feature: Generate test steps from gherkin features
-As a developer
-I want to be able to generate test step boilerplate code from gherkin features
-So that I can focus effort on building quality test steps
-
-Scenario: Generating test steps
-
-Given I have a simple feature file
-When I read the feature file
-Then a test steps file is generated
-```
-
-When you pass the feature file to a `new Parser()`, and pipe it to a given destination.
-
-```js
-var Parser = require('gulp-yadda-steps').Parser;
-gulp.src('local.feature')
-.pipe(new Parser())
-.pipe(fs.createWriteStream('output.json'));
-```
-
-Then you'll get a Yadda parsed JSON output:
-
-```js
-{"feature":{"title":"Generate test steps from gherkin features","annotations":{},
-"description":["As a developer","I want to be able to generate test step boilerplate code from gherkin features",
-"So that I can focus effort on building quality test steps"],
-"scenarios":[{"title":"Generating test steps",
-"annotations":{},"description":[],
-"steps":["Given I have a simple feature file","When I read the feature file","Then a test steps file is generated"]}]}}
-```
-
-Note that the output is a vinyl file which will have the filePath overridden if the libraryBasePath and featureBasePath options are set.
-
-
 <a name="module_gulp-yadda-steps.Render"></a>
 ##gulp-yadda-steps.Render(opts)
 Render is a transform stream requiring a yadda parsed JSON file.  Render will load test step libraries tagged in the
-feature (using @libraries=) and will attempt to load a file with the feature filename and suffix '-steps.js'.
-If one or more libraries are found they will be used to find step matches in the feature and filter them from the output.
+feature (using @libraries=) and will attempt to load a file with the feature filename and suffix "-steps.js".
+If one or more libraries are found they will be used to find step matches in the feature and filter them from
+the output.
 
 **Params**
 
 - opts `Object` - Parser configuration options  
-  - \[template_library='../templates/yadda_library.dust'\] `string` - Specifies a path to a template_library dust file. This file controls the layout of new step libraries.  
-  - \[template_insertion='../templates/yadda_insert.dust'\] `string` - Specifies a path to a template_insertion dust file.
+  - \[template_library="../templates/yadda_library.dust"\] `string` - Specifies a path to a template_library dust file. This file controls the layout of new step libraries.  
+  - \[template_insertion="../templates/yadda_insert.dust"\] `string` - Specifies a path to a template_insertion dust file.
 This file controls the layout for inserting steps into an existing step library.
 This template should use dust partial `steps` to insert generated steps from template_steps.  
-  - \[template_steps='../templates/yadda_steps.dust'\] `string` - Specifies a path to a template_steps dust file. This file controls the layout and generation of test steps.  
+  - \[template_steps="../templates/yadda_steps.dust"\] `string` - Specifies a path to a template_steps dust file. This file controls the layout and generation of test steps.  
 
-**Returns**: `readable-stream/transform`  
+**Returns**: `through2` - readable-stream/transform  
 **Example**  
  Given a yadda parsed JSON file:
 
@@ -222,142 +162,168 @@ return English.library()
 #Changelog
 
 <table style="width:100%;border-spacing:0px;border-collapse:collapse;margin:0px;padding:0px;border-width:0px;">
-   <tr>
+  <tr>
     <th style="width:20px;text-align:center;"></th>
-    <th style="width:80px;text-align:center;">Type</th> 
+    <th style="width:80px;text-align:center;">Type</th>
     <th style="width:80px;text-align:left;">ID</th>
     <th style="text-align:left;">Summary</th>
-   </tr>
-
-  <tr>
-    <td colspan=4><strong>Version: 0.1.9 - released 2014-10-12</strong></td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Non-functional</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-17</td>
-    <td>Package: Update package dependencies</td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Non-functional</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-16</td>
-    <td>Package: Remove all gulp tasks except &#39;test&#39; and update readme docs</td>
-   </tr>
-
-
-  <tr>
-    <td colspan=4><strong>Version: 0.1.8 - released 2014-10-06</strong></td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Non-functional</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-15</td>
-    <td>Package: Update package dependencies</td>
-   </tr>
-
-
-  <tr>
-    <td colspan=4><strong>Version: 0.1.7 - released 2014-09-22</strong></td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Non-functional</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-14</td>
-    <td>Parser: Add error logger to require step library function</td>
-   </tr>
-
-
-  <tr>
-    <td colspan=4><strong>Version: 0.1.6 - released 2014-09-20</strong></td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Bug</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-9</td>
-    <td>Render: Fix steps not being created in existing step-libraries.</td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Feature</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-13</td>
-    <td>Template: Update step library template to move all code within the module exports function</td>
-   </tr>
-
-
-  <tr>
-    <td colspan=4><strong>Version: 0.1.5 - released 2014-09-13</strong></td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Feature</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-8</td>
-    <td>Template: Update step library to require assert package.</td>
-   </tr>
-
-
-  <tr>
-    <td colspan=4><strong>Version: 0.1.4 - released 2014-08-28</strong></td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Non-functional</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-6</td>
-    <td>Package: Migrate to new Cellarise Package Manager.</td>
-   </tr>
-
-
-  <tr>
-    <td colspan=4><strong>Version: 0.1.3 - released 2014-08-17</strong></td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Bug</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-5</td>
-    <td>Render: Fix duplicate steps generated in output.</td>
-   </tr>
-
-
-  <tr>
-    <td colspan=4><strong>Version: 0.1.2 - released 2014-08-14</strong></td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Bug</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-4</td>
-    <td>Package: Fix path to main library in package.json.</td>
-   </tr>
-
-
-  <tr>
-    <td colspan=4><strong>Version: 0.1.0 - released 2014-08-13</strong></td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Feature</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-3</td>
-    <td>Package: Automate adding missing test steps from a test feature script.</td>
-   </tr>
-
-  <tr>
-    <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td> 
-    <td style="width:80px;text-align:center;">Feature</td> 
-    <td style="width:80px;text-align:left;">MDGSTEP-2</td>
-    <td>Package: Generate test steps from gherkin features.</td>
-   </tr>
-
-
+  </tr>
+    
+      <tr>
+        <td colspan=4><strong>Version: 0.1.10 - released 2014-10-19</strong></td>
+      </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-20</td>
+            <td>Parser: Change option &#39;library_suffix&#39; to camelcase &#39;librarySuffix&#39;</td>
+          </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Feature</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-19</td>
+            <td>Template: Update step library template to match new eslint rules</td>
+          </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-18</td>
+            <td>Package: Migrate from jshint to eslint static code analysis</td>
+          </tr>
+        
+    
+      <tr>
+        <td colspan=4><strong>Version: 0.1.9 - released 2014-10-12</strong></td>
+      </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-17</td>
+            <td>Package: Update package dependencies</td>
+          </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-16</td>
+            <td>Package: Remove all gulp tasks except &#39;test&#39; and update readme docs</td>
+          </tr>
+        
+    
+      <tr>
+        <td colspan=4><strong>Version: 0.1.8 - released 2014-10-06</strong></td>
+      </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-15</td>
+            <td>Package: Update package dependencies</td>
+          </tr>
+        
+    
+      <tr>
+        <td colspan=4><strong>Version: 0.1.7 - released 2014-09-22</strong></td>
+      </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-14</td>
+            <td>Parser: Add error logger to require step library function</td>
+          </tr>
+        
+    
+      <tr>
+        <td colspan=4><strong>Version: 0.1.6 - released 2014-09-20</strong></td>
+      </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Bug</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-9</td>
+            <td>Render: Fix steps not being created in existing step-libraries.</td>
+          </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Feature</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-13</td>
+            <td>Template: Update step library template to move all code within the module exports function</td>
+          </tr>
+        
+    
+      <tr>
+        <td colspan=4><strong>Version: 0.1.5 - released 2014-09-13</strong></td>
+      </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Feature</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-8</td>
+            <td>Template: Update step library to require assert package.</td>
+          </tr>
+        
+    
+      <tr>
+        <td colspan=4><strong>Version: 0.1.4 - released 2014-08-28</strong></td>
+      </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-6</td>
+            <td>Package: Migrate to new Cellarise Package Manager.</td>
+          </tr>
+        
+    
+      <tr>
+        <td colspan=4><strong>Version: 0.1.3 - released 2014-08-17</strong></td>
+      </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Bug</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-5</td>
+            <td>Render: Fix duplicate steps generated in output.</td>
+          </tr>
+        
+    
+      <tr>
+        <td colspan=4><strong>Version: 0.1.2 - released 2014-08-14</strong></td>
+      </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Bug</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-4</td>
+            <td>Package: Fix path to main library in package.json.</td>
+          </tr>
+        
+    
+      <tr>
+        <td colspan=4><strong>Version: 0.1.0 - released 2014-08-13</strong></td>
+      </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Feature</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-3</td>
+            <td>Package: Automate adding missing test steps from a test feature script.</td>
+          </tr>
+        
+          <tr>
+            <td style="width:20px;text-align:center;"><img src='https://jira.cellarise.com/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype'/></td>
+            <td style="width:80px;text-align:center;">Feature</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-2</td>
+            <td>Package: Generate test steps from gherkin features.</td>
+          </tr>
+        
+    
 </table>
 
 

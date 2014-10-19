@@ -7,7 +7,8 @@ A gulp task to generate or update Yadda test step libraries from Gherkin feature
 
 - opts `Object` - Task configuration options (see modules Parser and Render for more information)  
 
-**Returns**: `readable-stream/transform`  
+**Type**: `name`  
+**Returns**: `through2` - readable-stream/transform  
 **Example**  
  Given the feature file:
 
@@ -61,84 +62,23 @@ module.exports = (function() {
 Note that the output is a vinyl file which will have the filePath overridden if the libraryBasePath and featureBasePath options are set.
 
 
-**Members**
-
-* [gulp-yadda-steps](#module_gulp-yadda-steps)
-  * [gulp-yadda-steps.Parser(opts)](#module_gulp-yadda-steps.Parser)
-  * [gulp-yadda-steps.Render(opts)](#module_gulp-yadda-steps.Render)
-
-<a name="module_gulp-yadda-steps.Parser"></a>
-##gulp-yadda-steps.Parser(opts)
-Parser is a transform stream requiring a valid feature file.  Parser will load test step libraries tagged in the
-feature (using @libraries=) and will attempt to load a file with the feature filename and suffix '-steps.js'.
-If one or more libraries are found they will be used to find step matches in the feature and filter them from the output.
-
-**Params**
-
-- opts `Object` - Parser configuration options  
-  - \[libraryBasePath\] `string` - Specifies a path to the base location for the test step libraries.
-E.g. if the base path to the test step library is `Test/unit/steps/` use `path.join(__dirname, './steps/')`
-if the script is running from `'Test/unit'`.
-Note: featureBasePath must also be set for this option to take effect.  
-  - \[featureBasePath\] `string` - Specifies a path to the base location for the features.
-Note: libraryBasePath must also be set for this option to take effect.  
-
-**Returns**: `readable-stream/transform`  
-**Example**  
-Given the feature file:
-
-```markdown
-Feature: Generate test steps from gherkin features
-As a developer
-I want to be able to generate test step boilerplate code from gherkin features
-So that I can focus effort on building quality test steps
-
-Scenario: Generating test steps
-
-Given I have a simple feature file
-When I read the feature file
-Then a test steps file is generated
-```
-
-When you pass the feature file to a `new Parser()`, and pipe it to a given destination.
-
-```js
-var Parser = require('gulp-yadda-steps').Parser;
-gulp.src('local.feature')
-.pipe(new Parser())
-.pipe(fs.createWriteStream('output.json'));
-```
-
-Then you'll get a Yadda parsed JSON output:
-
-```js
-{"feature":{"title":"Generate test steps from gherkin features","annotations":{},
-"description":["As a developer","I want to be able to generate test step boilerplate code from gherkin features",
-"So that I can focus effort on building quality test steps"],
-"scenarios":[{"title":"Generating test steps",
-"annotations":{},"description":[],
-"steps":["Given I have a simple feature file","When I read the feature file","Then a test steps file is generated"]}]}}
-```
-
-Note that the output is a vinyl file which will have the filePath overridden if the libraryBasePath and featureBasePath options are set.
-
-
 <a name="module_gulp-yadda-steps.Render"></a>
 ##gulp-yadda-steps.Render(opts)
 Render is a transform stream requiring a yadda parsed JSON file.  Render will load test step libraries tagged in the
-feature (using @libraries=) and will attempt to load a file with the feature filename and suffix '-steps.js'.
-If one or more libraries are found they will be used to find step matches in the feature and filter them from the output.
+feature (using @libraries=) and will attempt to load a file with the feature filename and suffix "-steps.js".
+If one or more libraries are found they will be used to find step matches in the feature and filter them from
+the output.
 
 **Params**
 
 - opts `Object` - Parser configuration options  
-  - \[template_library='../templates/yadda_library.dust'\] `string` - Specifies a path to a template_library dust file. This file controls the layout of new step libraries.  
-  - \[template_insertion='../templates/yadda_insert.dust'\] `string` - Specifies a path to a template_insertion dust file.
+  - \[template_library="../templates/yadda_library.dust"\] `string` - Specifies a path to a template_library dust file. This file controls the layout of new step libraries.  
+  - \[template_insertion="../templates/yadda_insert.dust"\] `string` - Specifies a path to a template_insertion dust file.
 This file controls the layout for inserting steps into an existing step library.
 This template should use dust partial `steps` to insert generated steps from template_steps.  
-  - \[template_steps='../templates/yadda_steps.dust'\] `string` - Specifies a path to a template_steps dust file. This file controls the layout and generation of test steps.  
+  - \[template_steps="../templates/yadda_steps.dust"\] `string` - Specifies a path to a template_steps dust file. This file controls the layout and generation of test steps.  
 
-**Returns**: `readable-stream/transform`  
+**Returns**: `through2` - readable-stream/transform  
 **Example**  
  Given a yadda parsed JSON file:
 
