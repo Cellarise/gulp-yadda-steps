@@ -1,0 +1,10 @@
+/Tools/
+/Build/
+/Temp/
+/bower_components/
+/.idea/
+/Reports/
+/rsa-cert.*
+/rsa-key.*
+/config.json
+/*.log
