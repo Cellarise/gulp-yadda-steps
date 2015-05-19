@@ -1,4 +1,4 @@
- Given the feature file:
+Given the feature file:
 
 ```markdown
 Feature: Generate test steps from gherkin features
@@ -27,11 +27,10 @@ Then you'll get a Yadda style test step library:
 ```js
 "use strict";
 var English = require('yadda').localisation.English;
-
-/ Feature: Generate test steps from gherkin features /
+/* Feature: Generate test steps from gherkin features */
 module.exports = (function() {
  return English.library()
-   /Generating test steps/
+   /* Generating test steps */
    .define("Given I have a simple feature file", function(done) {
        this.assert(false);
        done();

@@ -49,10 +49,11 @@ module.exports = function testTasks(gulp, context) {
     return gulp.src(directories.test + "/test.js")
       .pipe(mocha({
         "reporter": reporter,
-        "timeout": 500000
+        "timeout": 600000
       }))
       .on("error", handleError)
       .pipe(istanbul.writeReports({
+        "coverageVariable": "__cpmCoverage__",
         "reporters": ["html", "clover-limits", "json-summary"],
         "reportOpts": {
           "dir": cwd + "/" + directories.reports + "/code-coverage",
@@ -81,7 +82,8 @@ module.exports = function testTasks(gulp, context) {
      * Make sure all these tasks do not require local references as defined above.
      */
     return gulp.src(sourceGlobStr)
-      .pipe(istanbul()); // Covering files - note: finish event called when finished (not end event)
+      .pipe(istanbul({"coverageVariable": "__cpmCoverage__"}));
+        // Covering files - note: finish event called when finished (not end event)
   });
 
   /**
@@ -95,7 +97,6 @@ module.exports = function testTasks(gulp, context) {
     var cwd = context.cwd;
     var pkg = context.package;
     var directories = pkg.directories;
-    var path = require("path");
 
     //results file path for mocha-bamboo-reporter-bgo
     process.env.MOCHA_FILE = path.join(cwd, directories.reports, "unit-mocha-tests.json");
