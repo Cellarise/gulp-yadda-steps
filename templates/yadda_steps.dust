@@ -1,6 +1,6 @@
 {#scenarios}/*Scenario: {title|s} */{#steps}
-    .define("{.|s}",
-      function test(done) {
-        assert(true);
-        done();
-      }){/steps}{/scenarios}
+{~s}{~s}{~s}{~s}.define("{.|s}",
+{~s}{~s}{~s}{~s}{~s}{~s}function test(done) {
+{~s}{~s}{~s}{~s}{~s}{~s}{~s}{~s}assert(true);
+{~s}{~s}{~s}{~s}{~s}{~s}{~s}{~s}done();
+{~s}{~s}{~s}{~s}{~s}{~s}}){/steps}{/scenarios}

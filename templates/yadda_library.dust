@@ -1,9 +1,9 @@
 {#feature}"use strict";
 /* Feature: {title|s} */
 module.exports = (function testSuite() {
-  var English = require("yadda").localisation.English;
-  var assert = require("assert");
-  return English.library()
-  {>steps/};
+{~s}{~s}var English = require("yadda").localisation.English;
+{~s}{~s}var assert = require("assert");
+{~s}{~s}return English.library()
+{~s}{~s}{>steps/};
 })();
 {/feature}
