@@ -1,4 +1,4 @@
-##Usage 
+## Usage
 
 This gulp task expects a feature file, written in Gherkin syntax, as input, and outputs the matching Yadda test step libraries for this feature file.
 

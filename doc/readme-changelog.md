@@ -1,4 +1,4 @@
-#Changelog
+# Changelog
 
 <table style="width:100%;border-spacing:0px;border-collapse:collapse;margin:0px;padding:0px;border-width:0px;">
   <tr>
@@ -9,6 +9,18 @@
   </tr>
     
 <tr>
+        <td colspan=4><strong>Version: 0.1.13 - released 2015-05-24</strong></td>
+      </tr>
+        
+<tr>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
+            <td style="width:80px;text-align:left;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-26</td>
+            <td><p>Package: Update development dependencies</p><p></p></td>
+          </tr>
+        
+    
+<tr>
         <td colspan=4><strong>Version: 0.1.12 - released 2015-05-21</strong></td>
       </tr>
         
@@ -16,7 +28,7 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-25</td>
-            <td>Package: Update package dependencies</td>
+            <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
     
@@ -28,28 +40,28 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-24</td>
-            <td>Package: Replace underscore.js with ramda.js</td>
+            <td><p>Package: Replace underscore.js with ramda.js</p><p></p></td>
           </tr>
         
 <tr>
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-23</td>
-            <td>Package: Update docs with updated jsdoc2markdown formatting</td>
+            <td><p>Package: Update docs with updated jsdoc2markdown formatting</p><p></p></td>
           </tr>
         
 <tr>
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-22</td>
-            <td>Package: Update eslint configuration, test.js runner and dev dependencies</td>
+            <td><p>Package: Update eslint configuration, test.js runner and dev dependencies</p><p></p></td>
           </tr>
         
 <tr>
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-21</td>
-            <td>Package: Update eslint configuration, test.js runner and dev dependencies</td>
+            <td><p>Package: Update eslint configuration, test.js runner and dev dependencies</p><p></p></td>
           </tr>
         
     
@@ -61,21 +73,23 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-20</td>
-            <td>Parser: Change option &#39;library_suffix&#39; to camelcase &#39;librarySuffix&#39;</td>
+            <td><p>Parser: Change option &#39;library_suffix&#39; to camelcase &#39;librarySuffix&#39;</p><p></p></td>
           </tr>
         
 <tr>
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Feature</td>
             <td style="width:80px;text-align:left;">MDGSTEP-19</td>
-            <td>Template: Update step library template to match new eslint rules</td>
+            <td><p>Template: Update step library template to match new eslint rules</p><p>As a developer
+I can automatically add missing steps to my step library based on my test feature
+So that I can make frequent changes to my test feature and keep my step library up to date with minimal time and effort</p></td>
           </tr>
         
 <tr>
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-18</td>
-            <td>Package: Migrate from jshint to eslint static code analysis</td>
+            <td><p>Package: Migrate from jshint to eslint static code analysis</p><p></p></td>
           </tr>
         
     
@@ -87,14 +101,14 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-17</td>
-            <td>Package: Update package dependencies</td>
+            <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
 <tr>
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-16</td>
-            <td>Package: Remove all gulp tasks except &#39;test&#39; and update readme docs</td>
+            <td><p>Package: Remove all gulp tasks except &#39;test&#39; and update readme docs</p><p></p></td>
           </tr>
         
     
@@ -106,7 +120,7 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-15</td>
-            <td>Package: Update package dependencies</td>
+            <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
     
@@ -118,7 +132,7 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-14</td>
-            <td>Parser: Add error logger to require step library function</td>
+            <td><p>Parser: Add error logger to require step library function</p><p></p></td>
           </tr>
         
     
@@ -130,14 +144,16 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Bug</td>
             <td style="width:80px;text-align:left;">MDGSTEP-9</td>
-            <td>Render: Fix steps not being created in existing step-libraries.</td>
+            <td><p>Render: Fix steps not being created in existing step-libraries.</p><p></p></td>
           </tr>
         
 <tr>
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Feature</td>
             <td style="width:80px;text-align:left;">MDGSTEP-13</td>
-            <td>Template: Update step library template to move all code within the module exports function</td>
+            <td><p>Template: Update step library template to move all code within the module exports function</p><p>  As a developer
+  I want to be able to generate test step boilerplate code (within the module exports function)
+  So that I can focus effort on building quality test steps</p></td>
           </tr>
         
     
@@ -149,7 +165,9 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Feature</td>
             <td style="width:80px;text-align:left;">MDGSTEP-8</td>
-            <td>Template: Update step library to require assert package.</td>
+            <td><p>Template: Update step library to require assert package.</p><p>As a developer
+I want to be able to generate test step boilerplate code that requires the assert package
+So that I can focus effort on building quality test steps</p></td>
           </tr>
         
     
@@ -161,7 +179,7 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-6</td>
-            <td>Package: Migrate to new Cellarise Package Manager.</td>
+            <td><p>Package: Migrate to new Cellarise Package Manager.</p><p></p></td>
           </tr>
         
     
@@ -173,7 +191,7 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Bug</td>
             <td style="width:80px;text-align:left;">MDGSTEP-5</td>
-            <td>Render: Fix duplicate steps generated in output.</td>
+            <td><p>Render: Fix duplicate steps generated in output.</p><p>Duplicate steps being generated when I rerun the task</p></td>
           </tr>
         
     
@@ -185,7 +203,7 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Bug</td>
             <td style="width:80px;text-align:left;">MDGSTEP-4</td>
-            <td>Package: Fix path to main library in package.json.</td>
+            <td><p>Package: Fix path to main library in package.json.</p><p></p></td>
           </tr>
         
     
@@ -197,14 +215,18 @@
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Feature</td>
             <td style="width:80px;text-align:left;">MDGSTEP-3</td>
-            <td>Package: Automate adding missing test steps from a test feature script.</td>
+            <td><p>Package: Automate adding missing test steps from a test feature script.</p><p>As a developer
+I can automatically add missing steps to my step library based on my test feature
+So that I can make frequent changes to my test feature and keep my step library up to date with minimal time and effort</p></td>
           </tr>
         
 <tr>
             <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Feature</td>
             <td style="width:80px;text-align:left;">MDGSTEP-2</td>
-            <td>Package: Generate test steps from gherkin features.</td>
+            <td><p>Package: Generate test steps from gherkin features.</p><p>As a developer
+I want to be able to generate test step boilerplate code from gherkin features
+So that I can focus effort on building quality test steps</p></td>
           </tr>
         
     
