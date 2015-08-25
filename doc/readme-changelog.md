@@ -9,6 +9,53 @@
   </tr>
     
 <tr>
+        <td colspan=4><strong>Version: 0.1.14 - released 2015-08-25</strong></td>
+      </tr>
+        
+<tr>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
+            <td style="width:80px;text-align:left;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-34</td>
+            <td><p>Package: Update package dependencies</p><p></p></td>
+          </tr>
+        
+<tr>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
+            <td style="width:80px;text-align:left;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-33</td>
+            <td><p>Package: Update package dependencies</p><p></p></td>
+          </tr>
+        
+<tr>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
+            <td style="width:80px;text-align:left;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-32</td>
+            <td><p>Package: Update package dependencies</p><p></p></td>
+          </tr>
+        
+<tr>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
+            <td style="width:80px;text-align:left;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-31</td>
+            <td><p>Package: Update package dependencies</p><p></p></td>
+          </tr>
+        
+<tr>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10419&amp;avatarType=issuetype"/></td>
+            <td style="width:80px;text-align:left;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-30</td>
+            <td><p>Package: Update package dependencies</p><p></p></td>
+          </tr>
+        
+<tr>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
+            <td style="width:80px;text-align:left;">Bug</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-29</td>
+            <td><p>Render: Fix missing callback err handling</p><p></p></td>
+          </tr>
+        
+    
+<tr>
         <td colspan=4><strong>Version: 0.1.13 - released 2015-05-24</strong></td>
       </tr>
         
