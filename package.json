@@ -10,7 +10,7 @@
   "config": {
     "projectCode": "MDGSTEP",
     "build": "65",
-    "buildTimestamp": "2015-08-25T10:34:58.008Z",
+    "buildTimestamp": "2015-08-25T12:02:14.721Z",
     "adminEmail": "admin@cellarise.com",
     "coverage": {
       "codeClimate": true,
