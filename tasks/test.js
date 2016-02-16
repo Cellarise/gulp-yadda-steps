@@ -178,7 +178,8 @@ module.exports = function testTasks(gulp, context) {
      */
     return gulp.src(sourceGlobStr)
       .pipe(istanbul({
-        "coverageVariable": COVERAGE_VAR
+        "coverageVariable": COVERAGE_VAR,
+        "includeUntested": true
       }))
       .pipe(istanbul.hookRequire()); // Force `require` to return covered files
     // Covering files - note: finish event called when finished (not end event)
@@ -201,7 +202,9 @@ module.exports = function testTasks(gulp, context) {
     process.env.MOCHA_FILE = path.join(cwd, directories.reports, MOCHA_FILE_NAME + ".json");
     //make sure the Reports directory exists - required for mocha-bamboo-reporter-bgo
     mkdirp.sync(path.join(cwd, directories.reports));
-
+    if (process.env.CI) {
+      return test("spec", true);
+    }
     return test("mocha-bamboo-reporter-bgo", true);
   });
 
