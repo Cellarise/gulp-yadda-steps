@@ -201,9 +201,7 @@ module.exports = function testTasks(gulp, context) {
     process.env.MOCHA_FILE = path.join(cwd, directories.reports, MOCHA_FILE_NAME + ".json");
     //make sure the Reports directory exists - required for mocha-bamboo-reporter-bgo
     mkdirp.sync(path.join(cwd, directories.reports));
-    if (process.env.CI) {
-      return test("spec", true);
-    }
+
     return test("mocha-bamboo-reporter-bgo", true);
   });
 
