@@ -178,8 +178,7 @@ module.exports = function testTasks(gulp, context) {
      */
     return gulp.src(sourceGlobStr)
       .pipe(istanbul({
-        "coverageVariable": COVERAGE_VAR,
-        "includeUntested": true
+        "coverageVariable": COVERAGE_VAR
       }))
       .pipe(istanbul.hookRequire()); // Force `require` to return covered files
     // Covering files - note: finish event called when finished (not end event)
