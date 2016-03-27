@@ -5,5 +5,5 @@
 Copyright (c) 2015 {author}
 
 ## Dependencies
-[gulp-yadda-steps@0.1.15](&quot;https://github.com/Cellarise/gulp-yadda-steps&quot;) - &quot;MIT License (MIT)&quot;, 
+[gulp-yadda-steps@0.1.16](&quot;https://github.com/Cellarise/gulp-yadda-steps&quot;) - &quot;MIT License (MIT)&quot;, 
 *documented by [npm-licenses](http://github.com/AceMetrix/npm-license.git)*.
