@@ -9,8 +9,8 @@
   },
   "config": {
     "projectCode": "MDGSTEP",
-    "build": "84",
-    "buildTimestamp": "2016-04-09T14:12:47.359Z",
+    "build": "87",
+    "buildTimestamp": "2016-08-06T14:03:16.829Z",
     "adminEmail": "admin@cellarise.com",
     "coverage": {
       "codeClimate": true,
