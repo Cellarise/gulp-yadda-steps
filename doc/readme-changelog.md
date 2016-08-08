@@ -9,6 +9,18 @@
   </tr>
     
 <tr>
+        <td colspan=4><strong>Version: 0.1.19 - released 2016-08-09</strong></td>
+      </tr>
+        
+<tr>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:80px;text-align:left;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-41</td>
+            <td><p>Package: Update package dependencies</p><p></p></td>
+          </tr>
+        
+    
+<tr>
         <td colspan=4><strong>Version: 0.1.18 - released 2016-08-07</strong></td>
       </tr>
         
