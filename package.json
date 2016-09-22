@@ -74,7 +74,7 @@
     "ramda": "^0.22.0",
     "streamifier": "^0.1.0",
     "through2": "^2.0.0",
-    "yadda": "^0.20.0"
+    "yadda": "^0.21.0"
   },
   "devDependencies": {
     "bunyan": "^1.1.3",
