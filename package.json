@@ -71,7 +71,7 @@
     "dustjs-helpers": "^1.2.0",
     "dustjs-linkedin": "^2.3.4",
     "gulp-util": "^3.0.0",
-    "ramda": "^0.22.0",
+    "ramda": "^0.23.0",
     "streamifier": "^0.1.0",
     "through2": "^2.0.0",
     "yadda": "^0.22.0"
