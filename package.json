@@ -2,15 +2,15 @@
   "author": "John Barry",
   "name": "gulp-yadda-steps",
   "description": "A gulp task to generate or update Yadda test step libraries from Gherkin features (natural language test scripts).",
-  "version": "0.1.24",
+  "version": "0.1.25",
   "repository": {
     "type": "git",
     "url": "https://github.com/Cellarise/gulp-yadda-steps.git"
   },
   "config": {
     "projectCode": "MDGSTEP",
-    "build": "106",
-    "buildTimestamp": "2017-01-02T12:58:50.174Z",
+    "build": "107",
+    "buildTimestamp": "2017-01-02T13:01:49.908Z",
     "adminEmail": "admin@cellarise.com",
     "coverage": {
       "codeClimate": true,
