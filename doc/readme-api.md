@@ -1,5 +1,6 @@
 ## API
 ### Modules
+
 <dl>
 <dt><a href="#module_gulp-yadda-steps">gulp-yadda-steps</a> ⇒ <code>through2</code></dt>
 <dd><p>A gulp task to generate or update Yadda test step libraries from Gherkin features (natural language test scripts).</p>
@@ -11,7 +12,9 @@
 <dd><p>Render is a transform stream requiring a yadda parsed JSON file.  Render will load test step libraries tagged in the feature (using @libraries=) and will attempt to load a file with the feature filename and suffix &quot;-steps.js&quot;.  If one or more libraries are found they will be used to find step matches in the feature and filter them from the output.</p>
 </dd>
 </dl>
+
 <a name="module_gulp-yadda-steps"></a>
+
 ### gulp-yadda-steps ⇒ <code>through2</code>
 A gulp task to generate or update Yadda test step libraries from Gherkin features (natural language test scripts).
 
@@ -75,6 +78,7 @@ Note that the output is a vinyl file which will have the filePath overridden if 
 -
 
 <a name="module_/parser"></a>
+
 ### /parser ⇒ <code>through2</code>
 Parser is a transform stream requiring a valid feature file.  Parser will load test step libraries tagged in the feature (using @libraries=) and will attempt to load a file with the feature filename and suffix "-steps.js".  If one or more libraries are found they will be used to find step matches in the feature and filter them from the output.
 
@@ -128,6 +132,7 @@ Note that the output is a vinyl file which will have the filePath overridden if 
 -
 
 <a name="module_/render"></a>
+
 ### /render ⇒ <code>through2</code>
 Render is a transform stream requiring a yadda parsed JSON file.  Render will load test step libraries tagged in the feature (using @libraries=) and will attempt to load a file with the feature filename and suffix "-steps.js".  If one or more libraries are found they will be used to find step matches in the feature and filter them from the output.
 

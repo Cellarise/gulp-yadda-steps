@@ -9,6 +9,18 @@
   </tr>
     
 <tr>
+        <td colspan=4><strong>Version: 0.1.26 - released 2017-01-24</strong></td>
+      </tr>
+        
+<tr>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:80px;text-align:left;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-47</td>
+            <td><p>Package: Update package dependencies</p><p></p></td>
+          </tr>
+        
+
+<tr>
         <td colspan=4><strong>Version: 0.1.25 - released 2017-01-02</strong></td>
       </tr>
         
@@ -19,7 +31,7 @@
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.23 - released 2016-12-30</strong></td>
       </tr>
@@ -31,7 +43,7 @@
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.22 - released 2016-10-05</strong></td>
       </tr>
@@ -43,7 +55,7 @@
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.21 - released 2016-09-23</strong></td>
       </tr>
@@ -55,7 +67,7 @@
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.20 - released 2016-09-06</strong></td>
       </tr>
@@ -67,7 +79,7 @@
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.19 - released 2016-08-09</strong></td>
       </tr>
@@ -79,7 +91,7 @@
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.18 - released 2016-08-07</strong></td>
       </tr>
@@ -91,7 +103,7 @@
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.17 - released 2016-03-28</strong></td>
       </tr>
@@ -103,7 +115,7 @@
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.16 - released 2016-02-16</strong></td>
       </tr>
@@ -122,7 +134,7 @@
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.15 - released 2015-11-13</strong></td>
       </tr>
@@ -134,7 +146,7 @@
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.14 - released 2015-08-25</strong></td>
       </tr>
@@ -202,7 +214,7 @@
             <td><p>Render: Fix missing callback err handling</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.13 - released 2015-05-24</strong></td>
       </tr>
@@ -214,7 +226,7 @@
             <td><p>Package: Update development dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.12 - released 2015-05-21</strong></td>
       </tr>
@@ -226,7 +238,7 @@
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.11 - released 2015-05-20</strong></td>
       </tr>
@@ -259,7 +271,7 @@
             <td><p>Package: Update eslint configuration, test.js runner and dev dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.10 - released 2014-10-19</strong></td>
       </tr>
@@ -287,7 +299,7 @@ So that I can make frequent changes to my test feature and keep my step library 
             <td><p>Package: Migrate from jshint to eslint static code analysis</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.9 - released 2014-10-12</strong></td>
       </tr>
@@ -306,7 +318,7 @@ So that I can make frequent changes to my test feature and keep my step library 
             <td><p>Package: Remove all gulp tasks except &#39;test&#39; and update readme docs</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.8 - released 2014-10-06</strong></td>
       </tr>
@@ -318,7 +330,7 @@ So that I can make frequent changes to my test feature and keep my step library 
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.7 - released 2014-09-22</strong></td>
       </tr>
@@ -330,7 +342,7 @@ So that I can make frequent changes to my test feature and keep my step library 
             <td><p>Parser: Add error logger to require step library function</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.6 - released 2014-09-20</strong></td>
       </tr>
@@ -351,7 +363,7 @@ So that I can make frequent changes to my test feature and keep my step library 
   So that I can focus effort on building quality test steps</p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.5 - released 2014-09-13</strong></td>
       </tr>
@@ -365,7 +377,7 @@ I want to be able to generate test step boilerplate code that requires the asser
 So that I can focus effort on building quality test steps</p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.4 - released 2014-08-28</strong></td>
       </tr>
@@ -377,7 +389,7 @@ So that I can focus effort on building quality test steps</p></td>
             <td><p>Package: Migrate to new Cellarise Package Manager.</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.3 - released 2014-08-17</strong></td>
       </tr>
@@ -389,7 +401,7 @@ So that I can focus effort on building quality test steps</p></td>
             <td><p>Render: Fix duplicate steps generated in output.</p><p>Duplicate steps being generated when I rerun the task</p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.2 - released 2014-08-14</strong></td>
       </tr>
@@ -401,7 +413,7 @@ So that I can focus effort on building quality test steps</p></td>
             <td><p>Package: Fix path to main library in package.json.</p><p></p></td>
           </tr>
         
-    
+
 <tr>
         <td colspan=4><strong>Version: 0.1.0 - released 2014-08-13</strong></td>
       </tr>
@@ -424,5 +436,5 @@ I want to be able to generate test step boilerplate code from gherkin features
 So that I can focus effort on building quality test steps</p></td>
           </tr>
         
-    
+
 </table>
