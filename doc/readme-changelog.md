@@ -9,11 +9,23 @@
   </tr>
     
 <tr>
+        <td colspan=4><strong>Version: 0.1.27 - released 2017-05-28</strong></td>
+      </tr>
+        
+<tr>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:80px;text-align:left;">Non-functional</td>
+            <td style="width:80px;text-align:left;">MDGSTEP-48</td>
+            <td><p>Package: Update package dependencies</p><p></p></td>
+          </tr>
+        
+
+<tr>
         <td colspan=4><strong>Version: 0.1.26 - released 2017-01-24</strong></td>
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-47</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -25,7 +37,7 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-46</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -37,7 +49,7 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-45</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -49,7 +61,7 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-44</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -61,7 +73,7 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-43</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -73,7 +85,7 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-42</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -85,7 +97,7 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-41</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -97,7 +109,7 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-40</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -109,7 +121,7 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-39</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -121,14 +133,14 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-38</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-37</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -140,7 +152,7 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-36</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -152,63 +164,63 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-28</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-27</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-35</td>
             <td><p>Package: Update development dependencies and configure for travis-ci</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-34</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-33</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-32</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-31</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-30</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Bug</td>
             <td style="width:80px;text-align:left;">MDGSTEP-29</td>
             <td><p>Render: Fix missing callback err handling</p><p></p></td>
@@ -220,7 +232,7 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-26</td>
             <td><p>Package: Update development dependencies</p><p></p></td>
@@ -232,7 +244,7 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-25</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -244,28 +256,28 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-24</td>
             <td><p>Package: Replace underscore.js with ramda.js</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-23</td>
             <td><p>Package: Update docs with updated jsdoc2markdown formatting</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-22</td>
             <td><p>Package: Update eslint configuration, test.js runner and dev dependencies</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-21</td>
             <td><p>Package: Update eslint configuration, test.js runner and dev dependencies</p><p></p></td>
@@ -277,14 +289,14 @@
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-20</td>
             <td><p>Parser: Change option &#39;library_suffix&#39; to camelcase &#39;librarySuffix&#39;</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Feature</td>
             <td style="width:80px;text-align:left;">MDGSTEP-19</td>
             <td><p>Template: Update step library template to match new eslint rules</p><p>As a developer
@@ -293,7 +305,7 @@ So that I can make frequent changes to my test feature and keep my step library 
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-18</td>
             <td><p>Package: Migrate from jshint to eslint static code analysis</p><p></p></td>
@@ -305,14 +317,14 @@ So that I can make frequent changes to my test feature and keep my step library 
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-17</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-16</td>
             <td><p>Package: Remove all gulp tasks except &#39;test&#39; and update readme docs</p><p></p></td>
@@ -324,7 +336,7 @@ So that I can make frequent changes to my test feature and keep my step library 
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-15</td>
             <td><p>Package: Update package dependencies</p><p></p></td>
@@ -336,7 +348,7 @@ So that I can make frequent changes to my test feature and keep my step library 
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-14</td>
             <td><p>Parser: Add error logger to require step library function</p><p></p></td>
@@ -348,14 +360,14 @@ So that I can make frequent changes to my test feature and keep my step library 
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Bug</td>
             <td style="width:80px;text-align:left;">MDGSTEP-9</td>
             <td><p>Render: Fix steps not being created in existing step-libraries.</p><p></p></td>
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Feature</td>
             <td style="width:80px;text-align:left;">MDGSTEP-13</td>
             <td><p>Template: Update step library template to move all code within the module exports function</p><p>  As a developer
@@ -369,7 +381,7 @@ So that I can make frequent changes to my test feature and keep my step library 
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Feature</td>
             <td style="width:80px;text-align:left;">MDGSTEP-8</td>
             <td><p>Template: Update step library to require assert package.</p><p>As a developer
@@ -383,7 +395,7 @@ So that I can focus effort on building quality test steps</p></td>
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10418&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Non-functional</td>
             <td style="width:80px;text-align:left;">MDGSTEP-6</td>
             <td><p>Package: Migrate to new Cellarise Package Manager.</p><p></p></td>
@@ -395,7 +407,7 @@ So that I can focus effort on building quality test steps</p></td>
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Bug</td>
             <td style="width:80px;text-align:left;">MDGSTEP-5</td>
             <td><p>Render: Fix duplicate steps generated in output.</p><p>Duplicate steps being generated when I rerun the task</p></td>
@@ -407,7 +419,7 @@ So that I can focus effort on building quality test steps</p></td>
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10403&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Bug</td>
             <td style="width:80px;text-align:left;">MDGSTEP-4</td>
             <td><p>Package: Fix path to main library in package.json.</p><p></p></td>
@@ -419,7 +431,7 @@ So that I can focus effort on building quality test steps</p></td>
       </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Feature</td>
             <td style="width:80px;text-align:left;">MDGSTEP-3</td>
             <td><p>Package: Automate adding missing test steps from a test feature script.</p><p>As a developer
@@ -428,7 +440,7 @@ So that I can make frequent changes to my test feature and keep my step library 
           </tr>
         
 <tr>
-            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.nhvr.net:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
+            <td style="width:20px;padding:0;margin:0;text-align:center;"><img src="https://jira.cellarise.com:80/secure/viewavatar?size=xsmall&amp;avatarId=10411&amp;avatarType=issuetype"/></td>
             <td style="width:80px;text-align:left;">Feature</td>
             <td style="width:80px;text-align:left;">MDGSTEP-2</td>
             <td><p>Package: Generate test steps from gherkin features.</p><p>As a developer
