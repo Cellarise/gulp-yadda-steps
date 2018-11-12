@@ -73,7 +73,7 @@
     "gulp-util": "^3.0.8",
     "ramda": "^0.25.0",
     "streamifier": "^0.1.1",
-    "through2": "^2.0.3",
+    "through2": "^3.0.0",
     "yadda": "^2.0.0"
   },
   "devDependencies": {
